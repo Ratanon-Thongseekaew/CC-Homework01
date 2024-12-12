@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        form{
+            border: 1px solid black;
+            height: 70%;
+            width: 50%;
+            padding-left: 1%;
+        }
+        input, textarea{
+            width: 40%;
+        }
+        select{
+            width: 41%;
+        }
+        .submitb, .resetb{
+            width: 15%;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="./index.html">Home |</a>
+        <a href="./education.html">Education |</a>
+        <a href="./work.html">Work Experience |</a>
+        <a href="#">Contact Me </a>
+       </div>
+       <hr>
+       <h1>Contact Me</h1>
+<form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+    <p><strong>Enter Your Information</strong></p>
+    <label for="username">Your Name:</label><br>
+        <input type="text" name="username"><br><br>
+    <label for="email">Your E-Mail:</label><br>
+        <input type="email" name="email"><br><br>
+    <label for="gender">Gender:</label><br>
+        <select name="gender" id="gender"><br>
+            <option value="#" selected disabled>Select..</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select><br><br>
+    <label for="message">Message:</label><br>
+        <textarea name="message" rows="10" cols="100"></textarea>
+    <br><br><br>
+    <input class="submitb" type="submit" value="Submit">
+    <input class="resetb" type="reset" value="Clear">
+    <br><br>
+</form>
+</body>
+</html>
